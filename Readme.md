@@ -1,8 +1,7 @@
 ## BUILD
 
-`python setup.py build_ext --inplace
-`
+`sh compile` OR `python setup.py build_ext --inplace`
 
-or
+## RUN
 
-`sh compile`
+`python main.py`

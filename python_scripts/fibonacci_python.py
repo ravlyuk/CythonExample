@@ -1,5 +1,5 @@
 def test(numb: int, repeat: int) -> int:
-    f1 = f2 = 1
+    f2 = 0
     for _ in range(repeat):
         f1 = f2 = 1
         for _ in range(numb - 2):

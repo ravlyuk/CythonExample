@@ -1,4 +1,4 @@
-def test(numb, repeat):
+def test(numb: int, repeat: int) -> int:
     f1 = f2 = 1
     for _ in range(repeat):
         f1 = f2 = 1

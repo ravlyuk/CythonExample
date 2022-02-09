@@ -26,10 +26,10 @@ def main(times: int = 5):
         speed_python = test_speed(name='Python', func=fibonacci_python.test, **params)
         speed_cython = test_speed(name='Cython', func=fibonacci_cython.test, **params)
         delta = int(speed_python / speed_cython)
-        deltas.append(delta)
         logger.debug(f'Cython швидший в {delta} раз')
-    avg = int(sum(deltas) / len(deltas))
-    logger.debug(f'Тестування завершено! В середньому Cython швидший в {avg} раз')
+        deltas.append(delta)
+    avg_speed = int(sum(deltas) / len(deltas))
+    logger.debug(f'Тестування завершено! В середньому Cython швидший в {avg_speed} раз!')
 
 
 if __name__ == '__main__':

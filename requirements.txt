@@ -1,3 +1,2 @@
 Cython==0.29.27
-llvmlite==0.38.0
 loguru==0.6.0

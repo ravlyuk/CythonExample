@@ -20,8 +20,8 @@ def test_speed(func, name: str, num: int, repeat: int) -> float:
 
 def main(times: int = 5):
     deltas = []
-    for i in range(1, times + 1):
-        logger.debug(f'== Тест №{i} ==')
+    for i in range(times):
+        logger.debug(f'== Тест №{i + 1} ==')
         params = {'num': 50, 'repeat': 100 ** 3}
         speed_python = test_speed(name='Python', func=fibonacci_python.test, **params)
         speed_cython = test_speed(name='Cython', func=fibonacci_cython.test, **params)
